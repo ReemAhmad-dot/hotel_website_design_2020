@@ -1,0 +1,368 @@
+*{
+
+	margin: 0;
+	
+}
+body{
+	margin: 0;
+}
+#nav-bar{
+
+	position: sticky;
+	top: 0;
+	z-index: 10;
+
+}
+.fa-bars{
+	color: #fff;
+	font-size: 30px !important;
+	
+}
+
+
+.navbar{
+	margin: 0 !important;
+	background-image: linear-gradient(to right ,rgb(26, 255, 255),rgb(0, 134, 179));
+	padding: 0 !important;
+
+}
+.navbar-nav li{
+	padding: 0 15px;
+
+}
+.navbar-nav li a {
+	color: #fff !important;
+	font-weight: 600;
+	text-shadow: 2px 3px 3px #b82e8a;
+
+}
+.navbar-nav li a:hover {
+	text-decoration: underline;
+	text-shadow: none;
+}
+
+.bottom-img{
+	width: 100%;
+	height: 150px;
+	background-image: linear-gradient(to right ,rgb(26, 255, 255),rgb(0, 134, 179));
+	
+	
+}
+.head{
+	margin: 0;
+	width: 100%;
+	height: 140px;
+	color: #fff;
+	padding: 40px !important;
+	font-size: 37px;
+	font-weight: 700;
+	text-shadow: 2px 2px 10px #cc0066;
+
+	
+	background-image:url('images/wave.png') ,linear-gradient(to right ,rgb(26, 255, 255),rgb(0, 134, 179));	
+	
+}
+.promo-title{
+	font-weight: 400 !important;
+	margin-top: 50px;
+	text-transform: capitalize;
+	
+}
+.basic-img{
+	margin-top: 7px;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border:1px solid #b82e8a;
+	box-shadow: 5px 5px  10px #660033,-5px -5px 10px #660033;
+}
+.bord{
+	margin-bottom: 65px;
+}
+#banner p{
+	font-size: 20px;
+
+}
+#banner button{
+	margin:10px 0px;
+	background-color: #660033;
+	border: 2px solid #660033;
+
+
+}
+#banner button:hover{
+	background-image: linear-gradient(to right,#80002a, #660033) ;
+
+}
+
+/*--------------------our rooms section-------------------------*/
+#ourRooms .container{
+	padding: 5px;
+}
+.title::before{
+       content: '';
+       background:#80002a;
+       width: 200px;
+       height:5px;
+       margin-right: auto;
+       margin-left: auto;
+       display: block;
+       transform: translateY(63px);
+
+}
+.title::after{
+       content: '';
+       background:#80002a;
+       width: 50px;
+       height:10px;
+       margin-right: auto;
+       margin-left: auto;
+       margin-bottom: 40px;
+       display: block;
+       transform: translateY(8px);
+
+}
+#ourRooms .title{
+	margin: 15px;
+	padding: 20px;
+}
+#roomsBox{
+	margin-bottom: 50px;
+}
+#roomsBox h1{
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.carousel-inner img{
+	width: 300px;
+	height: 300px;
+	
+}
+.carousel-caption {
+margin-bottom: 12px;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.carousel-item:hover .carousel-caption {
+  opacity: 1;
+  background-color: rgba(0,0,0,0.5);
+}
+/*---------------------------------services section-----------------------------*/
+/*
+#services .item{
+	height: 220px;
+	width: 220px;
+	background-color: rgba(0,0,0,0.5);
+	transition: 0.5s;
+	padding:20px;
+
+}
+.item h4{
+	font-size: 16px;
+	padding: 50px 20px;
+	text-align: center;
+	
+	
+
+}*/ 
+#services .container{
+	padding: 5px;
+}
+
+#services .box{
+	margin: 43px auto;
+	
+	max-width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #16c9f9;
+	box-sizing: border-box;
+	text-align: center;
+	transition: .5s;
+}
+#services .box:hover{
+	border-radius: 0;
+}
+#services .box:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #16c9f9;
+	z-index: -1;
+	transform: rotate(-45deg);
+	border-radius: 10px;
+}
+#services .box p{
+	margin: 0 auto;
+	padding: 0;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: .5s;
+	text-align: center;
+
+}
+#services .box:hover p{
+	box-shadow: 10px 0 30px rgba(0,0,0,.3)
+}
+
+
+/*---------------------------------reservation section-----------------------------*/
+.book{
+	width: 100%;
+	height: 100vh;
+
+	padding: 20px;
+	position: relative;
+
+}
+.book:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(330deg ,#16c9f9 55%,#fff 0%);
+	z-index: -1;
+}
+.book p{
+	margin-top: 70px;
+	margin-bottom: 15px;
+	font-size: 20px;
+
+}
+.form-button button{
+	border-radius: 100px;
+	box-shadow: none;
+	border: none;
+	margin-top: 20px;
+	padding: 12px 35px;
+	color:#16c9f9;
+	text-align: center;
+	
+	background: transparent;
+	
+
+}
+form:hover .form-button button{
+	background: #fff;
+	color: #16c9f9;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+
+}
+.radio-btn .btn{
+	margin: 45px 4px 45px ;
+	box-shadow: none;
+
+}
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button{
+	-webkit-appearance:none;
+	margin: 0;
+}
+.title{
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+/*---------------------social media section----------------*/
+#socail-media{
+	background-color: #f8f9fa;
+	padding: 70px 0;
+}
+#socail-media p{
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+.socail-icons img{
+	
+	width: 60px;
+	transition: 0.5s;
+
+}
+.socail-icons a:hover img {
+	transform: translateY(-10px);
+
+}
+/*------------------footer section-----------------------*/
+#footer{
+	
+	background-image:url('images/wave5.jpg');
+	background-size:100% 351px;
+	height: 351px;
+	background-repeat: no-repeat;
+	color: #fff;
+	margin: 0 !important;
+	
+}
+.footer-box{
+	padding: 20px;
+}
+.footer-box h5{
+	margin-bottom: 18px;
+}
+
+
+.footer-box .fa {
+	margin-right: 8px ;
+	font-size: 25px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	padding-top: 7px;
+	border-radius: 10px;
+	background-image: linear-gradient(to right ,rgb(26, 255, 255),rgb(0, 134, 179));
+	
+	
+
+}
+
+.footer-box .form-control{
+	border: none;
+	border-radius: 0;
+	max-width: 250px;
+}
+.footer-box .btn-primary{
+	box-shadow: none;
+	border:none;
+	margin-top: 20px;
+	padding: 5px 20px;
+	background-image: linear-gradient(to right ,rgb(26, 255, 255),rgb(0, 134, 179));
+}
+.footer-box .btn-primary:hover{
+	background-image: linear-gradient(to left ,rgb(26, 255, 255),rgb(0, 134, 179));
+}
+hr {
+	margin: 0;
+	background-color: #fff;
+}
+.copyright{
+	margin-bottom: 0;
+	padding: 12px;
+	text-align: center;
+	font-size: small;
+}
+.copyright a{
+color: #fff;
+}
+
+
+
+ 
+
